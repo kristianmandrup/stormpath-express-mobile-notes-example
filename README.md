@@ -14,6 +14,17 @@ The master branch automatically will be deployed to https://stormpathnotes.herok
 
 1. Download and install [Node.js](https://nodejs.org/)
 2. Grab your API Keys from the [Stormpath Admin Console](https://api.stormpath.com) (easiest way is to use the quickstart)
+
+Log into the Stormpath Account you created, and click on the Node.js quickstart. In the first page, you’ll see a section showing you how to set up your API Keys by using environment variables. Environment variables allow you to configure your application without using code, which is great when you have multiple development environments or even servers. Paste the API Keys from the quickstart into your command line:
+
+*This is an example; use the values in Stormpath instead*
+
+```
+$ export STORMPATH_CLIENT_APIKEY_ID=EXAMPLE
+$ export STORMPATH_CLIENT_APIKEY_SECRET=EXAMPLE
+$ export STORMPATH_APPLICATION_HREF=https://api.stormpath.com/v1/applications/EXAMPLE
+```
+
 3. Run the commands:
 
 ```bash
