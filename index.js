@@ -46,5 +46,7 @@ app.post('/notes', stormpath.apiAuthenticationRequired, function(req, res) {
 
 // Once Stormpath has initialized itself, start your web server!
 app.on('stormpath.ready', function () {
-  app.listen(process.env.PORT || 3000)
+  var port = process.env.PORT || 3000
+  console.log('listening on port:', port)
+  app.listen(port)
 })

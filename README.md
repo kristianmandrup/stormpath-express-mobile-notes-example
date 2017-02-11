@@ -15,7 +15,9 @@ The master branch automatically will be deployed to https://stormpathnotes.herok
 1. Download and install [Node.js](https://nodejs.org/)
 2. Grab your API Keys from the [Stormpath Admin Console](https://api.stormpath.com) (easiest way is to use the quickstart)
 
-Log into the Stormpath Account you created, and click on the Node.js quickstart. In the first page, you’ll see a section showing you how to set up your API Keys by using environment variables. Environment variables allow you to configure your application without using code, which is great when you have multiple development environments or even servers. Paste the API Keys from the quickstart into your command line:
+Log into the Stormpath Account you created, and click on [Node.js quickstart](https://api.stormpath.com/ui2/index.html#/quickstart/none/nodejs/backend/project-type/existing)
+
+In the first page, you’ll see a section showing you how to set up your API Keys by using environment variables. Environment variables allow you to configure your application without using code, which is great when you have multiple development environments or even servers. Paste the API Keys from the quickstart into your command line:
 
 *This is an example; use the values in Stormpath instead*
 
@@ -30,10 +32,21 @@ $ export STORMPATH_APPLICATION_HREF=https://api.stormpath.com/v1/applications/EX
 ```bash
 git clone https://github.com/stormpath/stormpath-express-mobile-notes-example.git
 cd stormpath-express-mobile-notes-example
-node index.js
 ```
 
-## Endpoints
+Install node dependency modules via npm: `npm i` or yarn: `yarn install`
+
+Run Mobile Server app:
+
+`node index.js`
+
+Run Web Server app:
+
+`node server.js`
+
+The [server app](https://stormpath.com/blog/build-nodejs-express-stormpath-app) can be found in `server.js`
+
+## Mobile Server Endpoints
 
 All endpoints require authentication with an `Authorization: Bearer ACCESSTOKEN` header.
 
